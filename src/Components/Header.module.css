@@ -1,0 +1,17 @@
+.header{
+  background-color: #711a75;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h1{
+  font-family: 'Permanent Marker', cursive;
+  color: white;
+  margin: 0;
+  padding: 1rem;
+}
+
+.header button {
+  font-family: 'Kanit', sans-serif;
+  margin: 1rem;
+}
