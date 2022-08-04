@@ -1,7 +1,8 @@
 import React from "react";
 
-const TwootForm = (props) =>{
 
-}
+const TwootForm = (props) => {
 
-export default TwootForm
+};
+
+export default TwootForm;
