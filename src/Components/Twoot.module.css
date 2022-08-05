@@ -7,8 +7,17 @@
   flex-direction: column;
   border: 3px solid black;
   margin-bottom: 1rem;
-  padding: 0.5rem;
-  box-shadow: 2px 6px #888888;
+  padding-top: 1rem;;
+  padding-bottom: 1rem;;
+  padding-inline: 2rem;
+  transition: 250ms;
+
+}
+
+.twoot:hover{
+  box-shadow: 6px 10px #888888;
+  transition: 250ms;
+
 }
 
 .twootHeader{
@@ -24,14 +33,14 @@
 
 .twootHeader img {
   height: 50px;
-  margin-inline: 10px;
+  margin-right: 10px;
 }
 
 .twootContent{
   display: flex;
-  width: 80%;
+  width: 95%;
   align-items: center;
-  justify-content: center;
+  font-weight: bold;
   border-bottom: solid 2px black;
 }
 
