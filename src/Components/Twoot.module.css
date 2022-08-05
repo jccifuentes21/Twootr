@@ -43,5 +43,14 @@
 }
 
 .actionButtons button{
+  background-color: transparent;
+  border: none;
   margin-inline: 0.25rem;
+  transition-duration: 0.3s;
+
+}
+
+.actionButtons button:hover {
+  color: violet;
+  cursor: pointer;
 }

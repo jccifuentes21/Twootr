@@ -13,5 +13,9 @@
 
 .header button {
   font-family: 'Kanit', sans-serif;
+  background-color: #711a75;
+  color: white;
+  border-style: none;
+  font-size: medium;
   margin: 1rem;
 }

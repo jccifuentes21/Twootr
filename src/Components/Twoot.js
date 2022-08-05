@@ -18,9 +18,9 @@ const Twoot = (props) => {
       <div className={classes.twootFooter}>
         <p>Twooted on {props.date}</p>
         <div className={classes.actionButtons}>
-          <button>Flag</button>
-          <button>Retweet</button>
-          <button>Like</button>
+          <button><span className="fa-solid fa-flag"></span></button>
+          <button><span className="fa-solid fa-retweet"></span></button>
+          <button><span className="fa-solid fa-heart"></span></button>
         </div>
       </div>
     </li>
