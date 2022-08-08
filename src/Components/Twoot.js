@@ -4,11 +4,9 @@ import classes from "./Twoot.module.css";
 
 const Twoot = (props) => {
 const date = new Date()
-const currentDate = date.toISOString().split('T')[0]
 
 const dateArr = props.date.split('-')
 const twootDate = new Date(dateArr[0], dateArr[1]-1, dateArr[2])
-const twootDateISO = twootDate.toISOString().split('T')[0]
 
 const differenceInTime = date.getTime() - twootDate.getTime()
 
@@ -31,8 +29,8 @@ let differenceInDays = Math.floor(differenceInTime / (1000 * 3600 * 24))
         <p>{props.content}</p>
       </div>
       <div className={classes.twootFooter}>
-        {differenceInDays == 0 && <p>Twooted today.</p>}
-        {differenceInDays != 0 && <p>Twooted {differenceInDays} days ago.</p>}
+        {differenceInDays <= 0 && <p>Twooted today.</p>}
+        {differenceInDays > 0 && <p>Twooted {differenceInDays} days ago.</p>}
         <div className={classes.actionButtons}>
           <button>
             <span className="fa-solid fa-flag"></span>
