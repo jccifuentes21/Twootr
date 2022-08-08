@@ -2,7 +2,8 @@
   "name": "twootr",
   "type": "module",
   "version": "0.1.0",
-  "proxy": "http://localhost:8080/",
+  "proxy": "https://twootr-jc.herokuapp.com/",
+  "homepage": "https://jccifuentes21.github.io/Twootr",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -27,7 +28,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon server.js",
     "client": "cd frontend && npm start",
-    "dev": "concurrently  \"npm run server\" \"npm run client\""
+    "dev": "concurrently  \"npm run server\" \"npm run client\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -51,5 +54,8 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
+  }
 }
