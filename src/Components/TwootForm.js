@@ -25,7 +25,7 @@ const TwootForm = (props) => {
 
     
 
-    axios.post("http://localhost:8080/twoot", { newTwoot }).then((newData) => {
+    axios.post("/twoot", { newTwoot }).then((newData) => {
       props.updateFeed();
     });
 

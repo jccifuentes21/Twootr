@@ -11,12 +11,12 @@ import TwootFeed from "./Components/TwootFeed.js";
 function App() {
   const [twoots, setTwoots] = useState([]);
 
-  axios.get("http://localhost:8080/twoots").then((serverTwoots) => {
+  axios.get("/twoots").then((serverTwoots) => {
     setTwoots(serverTwoots.data);
   });
 
   const updateTwootFeed = () => {
-    axios.get("http://localhost:8080/twoots").then((serverTwoots) => {
+    axios.get("/twoots").then((serverTwoots) => {
       setTwoots(serverTwoots.data);
     });
   };
