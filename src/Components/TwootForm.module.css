@@ -1,22 +1,21 @@
-.twootForm{
+.twootForm {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 
-.twootForm input{
+.twootInput {
   border: none;
   border-bottom: 3px solid black;
   height: 2.5rem;
   background: none;
-  font-family: 'Kanit';
+  font-family: "Kanit";
   border-radius: 1em;
   margin-bottom: 1rem;
-
 }
 
-.twootForm input:focus{
+.twootInput:focus {
   background-color: #f0e4d0;
   border: none;
   border-radius: 1em;
@@ -24,26 +23,26 @@
   outline: none;
 }
 
-.twootFormFooter{
+.twootFormFooter {
   display: flex;
   justify-content: space-between;
 }
 
-.twootFormFooter button{
+.twootFormFooterButton {
   border: none;
   background-color: #711a75;
   color: white;
   border-radius: 5px;
   cursor: pointer;
   padding: 0.5rem 1rem;
-  font-family: 'Permanent Marker', sans-serif;
+  font-family: "Permanent Marker", sans-serif;
 }
 
-.twootFormFooter span{
-  font-family: 'Permanent Marker', sans-serif;
+.twootFormFooter span {
+  font-family: "Permanent Marker", sans-serif;
 }
 
-.userInfo{
+.userInfo {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -51,31 +50,53 @@
   height: auto;
   padding: 2rem;
   background-color: #413f42;
- }
- 
- .userIcon{
-   height: 10rem;
- }
- 
- .user{
-   padding: 0.5rem;
-   color: white;
- }
- 
- .username{
-   padding: 0.5rem;
-   color: white;
- 
- }
- 
- .editButton{
-   color: white;
-   margin-left: 1rem;
-   cursor: pointer;
-   
- }
- 
- .editButton:hover{
-   color: #737373;
- 
- }
+}
+
+.userIcon {
+  height: 10rem;
+}
+
+.user {
+  padding: 0.5rem;
+  color: white;
+}
+
+.username {
+  padding: 0.5rem;
+  color: white;
+}
+
+.editButton {
+  color: white;
+  margin-left: 1rem;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  color: #737373;
+}
+
+.usernameInput {
+  border: none;
+  border-bottom: 3px solid black;
+  height: 2.5rem;
+  color: white;
+  background: #737373;
+  font-family: "Kanit";
+  border-radius: 1em;
+  margin-bottom: 1rem;
+  outline: none;
+}
+
+.usernameInput:focus{
+  background-color: #9a9999;
+}
+
+.invalid{
+  color: red;
+}
+
+.invalidButton{
+  background-color: #b183b4;
+  cursor: default;
+}
