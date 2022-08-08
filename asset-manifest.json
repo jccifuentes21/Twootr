@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Twootr/static/css/main.87a6c103.css",
+    "main.js": "/Twootr/static/js/main.ecc9a242.js",
+    "index.html": "/Twootr/index.html",
+    "main.87a6c103.css.map": "/Twootr/static/css/main.87a6c103.css.map",
+    "main.ecc9a242.js.map": "/Twootr/static/js/main.ecc9a242.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.87a6c103.css",
+    "static/js/main.ecc9a242.js"
+  ]
+}
