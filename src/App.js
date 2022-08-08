@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import "./App.css";
 
@@ -11,9 +11,11 @@ import TwootFeed from "./Components/TwootFeed.js";
 function App() {
   const [twoots, setTwoots] = useState([]);
 
-  axios.get("/twoots").then((serverTwoots) => {
-    setTwoots(serverTwoots.data);
-  });
+  useEffect(()=> {
+    axios.get("/twoots").then((serverTwoots) => {
+      setTwoots(serverTwoots.data);
+    });
+  }, [])
 
   const updateTwootFeed = () => {
     axios.get("/twoots").then((serverTwoots) => {
