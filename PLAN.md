@@ -57,20 +57,20 @@ Click on the like, flag or retwoot button
     - h1 title
     -button 'write a new twoot' //takes the user back to the top
   - main
-    -Username and logo
-      -Logo of the user
-      -user name 
-        -name
-        -edit button
-      -username @
     -Compose a twoot
       -form
+        -Username and logo
+          -Logo of the user
+          -user name 
+        -name
+        -edit button
+        -username @
         -input label
         -input
         -button
         -word counter
     -Twoot Feed
-      -Card
+      -Twoot
         -twoot header
           -logo
           -author
